@@ -7,37 +7,44 @@
 	<meta name="description" content="Startup Robotics is an innovative platform which links all components necessary to start your own robotics project.">
 	<link rel="icon" type="image/png" href="img/fav.png"/>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/aos.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header>
+	<header data-aos="fade-down">
 		<div class="container">
 			<div class="outer__header">
 				<div class="left__header">
-					<a href="#">
+					<a href="index.html">
 						<img src="img/logo.svg" alt="logo">
 					</a>
+					<div class="center__menu">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#" class="scrollable__button" data-block="builder">Online Builder</a></li>
+							<li><a href="#" class="scrollable__button" data-block="platform">Our Platform</a></li>
+							<li><a href="#" class="scrollable__button" data-block="competitions">Competitions</a></li>
+							<li><a href="mailto:info@startuprobotics.com">Contact Us</a></li>
+						</ul>
+					</div>
 				</div>
-				<div class="center__menu">
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Online Builder</a></li>
-						<li><a href="#">Our Platform</a></li>
-						<li><a href="#">Competitions</a></li>
-						<li><a href="#">Contact Us</a></li>
-					</ul>
-				</div>
+				
 				<div class="right__header">
-					<a href="#">Our ILO</a>
+					<a href="#" class="menu__button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+					<a href="http://ilocx.com/startup-robotics" target="_blank" class="ilo__button">Our ILO</a>
 				</div>
 			</div>
 		</div>
 	</header>
-	<div class="first__block">
+	<div class="first__block" data-aos="zoom-in">
 		<div class="container">
 			<div class="outer__first">
-				<div class="left__text">
-					<h1>Bringing your ideas to <span>life</span></h1>
+				<div class="left__text" data-aos="fade-right" data-aos-delay="400">
+					<h1>Bringing your <br> ideas to <span>life</span></h1>
 					<p>Startup Robotics is an innovative platform which links all components necessary to start your own robotics project.</p>
 					<div class="first__button">
 						<a href="#">Learn More <span><img src="img/arrowbutton.svg" alt="arrowbutton"></span></a>
@@ -48,7 +55,7 @@
 	</div>
 	<div class="second__info">
 		<div class="container">
-			<div class="outer__second">
+			<div class="outer__second" data-aos="zoom-in" data-aos-delay="300">
 				<div class="image__second">
 					<div class="back__robot">
 						<img src="img/robotback.svg" alt="robotback">
@@ -76,17 +83,19 @@
 	<div class="plug__block">
 		<div class="container">
 			<div class="outer__plug">
-				<div class="left__plug">
+				<div class="left__plug" data-aos="fade-right">
 					<h2>Plug & Play Robotics</h2>
 					<p>Our mission is to bring more people into robotics by bridging the gap between technology and engineering. We want to make robotics accessible, fun, and valuable to everyone.</p>
 					<p>Currently there are thousands of robotics parts available, but with no guarantee that they will work together. Startup Robotics have assembled a huge collection of over <span>100,000 generic robotics parts</span>, verifying and mapping each individual part using our innovative software.</p>
 				</div>
-				<div class="right__plug">
+				<div class="right__plug" data-aos="fade-left">
 					<img src="img/gridvideo.svg" alt="gridvideo">
 					<div class="video__plug">
-						<!-- <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/458488632?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-<p><a href="https://vimeo.com/458488632">start up robotics_mixdown</a> from <a href="https://vimeo.com/user25915612">Allied SX Limited.</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->
+						<div class="wrap__vimeo">
+							<div  style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/458488632?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+						</div>
 						<div class="overlay__plug">
+							<img src="img/childimage.png" alt="robotvideo">
 							<a href="#">
 								<img src="img/robotplay.svg" alt="robotplay">
 							</a>
@@ -96,16 +105,16 @@
 			</div>
 		</div>
 	</div>
-	<div class="robotics__builder">
+	<div class="robotics__builder" id="builder">
 		<img src="img/roboticsgrid.svg" alt="robotics">
 		<div class="container">
 			<div class="outer__robotics">
-				<div class="head__robotics">
+				<div class="head__robotics" data-aos="fade-down">
 					<h2>Online Robotics Builder</h2>
 					<p>The cornerstone of Startup Robotics is our online robotics builder. Once an individual part has been verified and mapped, it is launched on our platform, and available to purchase as a recommended or custom build.</p>
 				</div>
 				<div class="inner__builder">
-					<div class="elem__builder">
+					<div class="elem__builder" data-aos="fade-up">
 						<div class="builder__image">
 							<img src="img/builderimage1.svg" alt="builder">
 						</div>
@@ -115,7 +124,7 @@
 						</div>
 					</div>
 
-					<div class="elem__builder">
+					<div class="elem__builder" data-aos="fade-up">
 						<div class="builder__image">
 							<img src="img/builderimage2.svg" alt="builder">
 						</div>
@@ -128,17 +137,17 @@
 			</div>
 		</div>
 	</div>
-	<div class="platform__block">
+	<div class="platform__block" id="platform">
 		<div class="container">
 			<div class="outer__platform">
-				<div class="head__platform">
+				<div class="head__platform" data-aos="fade-down">
 					<h2>Our Platform</h2>
 					<p>There is more to Startup Robotics than our online builder. It’s a place where your dreams can become a reality.</p>
 				</div>
 				<div class="inner__platform">
 					<img class="grid1" src="img/gridvideo.svg" alt="grid">
 					<img class="grid2" src="img/gridvideo.svg" alt="grid">
-					<div class="elem__platform">
+					<div class="elem__platform" data-aos="fade-up">
 						<div class="platform__image">
 							<img src="img/platform1.png" alt="platform">
 						</div>
@@ -148,7 +157,7 @@
 						</div>
 					</div>
 
-					<div class="elem__platform">
+					<div class="elem__platform" data-aos="fade-up">
 						<div class="platform__image">
 							<img src="img/platform2.png" alt="platform">
 						</div>
@@ -161,9 +170,9 @@
 			</div>
 		</div>
 	</div>
-	<div class="competitions__block">
+	<div class="competitions__block" id="competitions">
 		<div class="container">
-			<div class="outer__competitions">
+			<div class="outer__competitions" data-aos="fade-up">
 				<img src="img/grid.svg" alt="grid">
 				<div class="left__competitions">
 					<img src="img/competitions.jpg" alt="competitions">
@@ -179,17 +188,17 @@
 	<div class="license__block">
 		<div class="container">
 			<div class="outer__license">
-				<div class="left__license">
+				<div class="left__license" data-aos="fade-right">
 					<h2>Initial License Offering (ILO)</h2>
 					<p>Startup Robotics are undertaking an ILO to boost our following and gain capital. With a focus on robotic-based builders, investors, minds and designers, combined with a key link to inidividual AI, makes this a very exciting project.</p>
 					<p>Our ILO will foster a team of ‘robotic-focused ILOers’, who are early adopters, keen and interested in this space. Our ILO can forge forward with a dynamic team that will excite the market about new and grassroots innovation in this enormous sector.</p>
 					<div class="license__more">
-						<a href="#">Visit ILOCX</a>
+						<a href="http://ilocx.com/startup-robotics" target="_blank">Visit ILOCX</a>
 					</div>
 				</div>
-				<div class="right__license">
-					<img src="img/ilocxmac.svg" alt="ilocx">
-				</div>
+				<a href="http://ilocx.com/startup-robotics" target="_blank" class="right__license" data-aos="fade-left">
+					<img src="img/macilocx.png" alt="ilocx">
+				</a>
 			</div>
 		</div>
 	</div>
@@ -199,20 +208,20 @@
 				<div class="top__footer">
 					<div class="elem__footer">
 						<div class="footer__logo">
-							<a href="#">
+							<a href="index.html">
 								<img src="img/footlogo.svg" alt="footlogo">
 							</a>
 						</div>
-						<p>Startup Robotics LTDW<br> Verify House <br> 23 Northumberland Avenue <br> London</p>
+						<p>Startup Robotics LTD<br> Verify House <br> 23 Northumberland Avenue <br> London, WC2N 5BJ</p>
 					</div>
 					<div class="elem__footer">
 						<ul>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">Our Platform</a></li>
-							<li><a href="#">Contact Us</a></li>
-							<li><a href="#">Online Builder</a></li>
-							<li><a href="#">Competitions</a></li>
-							<li><a href="#">Our ILO</a></li>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#" class="scrollable__button" data-block="platform">Our Platform</a></li>
+							<li><a href="mailto:info@startuprobotics.com">Contact Us</a></li>
+							<li><a href="#" class="scrollable__button" data-block="builder">Online Builder</a></li>
+							<li><a href="#" class="scrollable__button" data-block="competitions">Competitions</a></li>
+							<li><a href="http://ilocx.com/startup-robotics" target="_blank">Our ILO</a></li>
 						</ul>
 					</div>
 					<div class="top__foot">
@@ -222,12 +231,24 @@
 				<div class="bottom__footer">
 					<p>© 2020 Startup Robotics Ltd – All rights reserved.</p>
 					<ul>
-						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="#">Cookie Policy</a></li>
+						<li><a href="privacy.html">Privacy Policy</a></li>
+						<li><a href="cookie.html">Cookie Policy</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</footer>
+
+	<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  	<script src="js/aos.js"></script>
+  	<script>
+  		AOS.init({
+  			once:true
+  		});
+  	</script>
+	<script src="js/script.js"></script>
 </body>
 </html>
